@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr5opdng6nlc4"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_d8b7l"]
+b = Vector2(0, -122)
+
+[node name="Wall_end" type="StaticBody2D"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_d8b7l")
